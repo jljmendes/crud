@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
+            $table->string('titulo');
+            $table->text('conteudo');
+            $table->string('autor');
             $table->timestamps();
         });
     }
